@@ -4,17 +4,18 @@ import { SpotlightAction } from '@mantine/spotlight';
 import { Layout } from '../components/Layout';
 import favicon from '../public/favicon.svg';
 import { useRouter } from 'next/router';
-import { spotlightItems } from '../utils/category-data';
+import { spotlights } from '../utils/category-data';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
   const router = useRouter();
 
-  const actions: SpotlightAction[] = spotlightItems?.map((item) => ({
+  const actions: SpotlightAction[] = spotlights?.map((item) => ({
     title: item.label,
     description: item.description,
     onTrigger: () => router.push(item.link || ''),
     icon: <item.icon size={18} />,
+    keywords: item.keywords,
   }));
 
   return (

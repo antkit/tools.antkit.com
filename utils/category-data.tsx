@@ -60,20 +60,38 @@ const unixTimeConvert: Category = {
 
 const passwordGenerator: Category = {
   label: 'Password generate',
-  description: 'Password generator',
+  description: 'Token、密码、随机字符串',
   icon: IconLock,
   color: 'blue',
   link: '/string/password',
 };
 
 // spotlight
-export const spotlightItems: GridItem[] = [
-  home,
-  base64EncodeDecode,
-  urlEncodeDecode,
-  md5Encrypt,
-  unixTimeConvert,
-  passwordGenerator,
+export const spotlights = [
+  {
+    ...home,
+    keywords: ['Home', '首页', '导航'],
+  },
+  {
+    ...base64EncodeDecode,
+    keywords: ['Base64', 'Encode', 'Decode'],
+  },
+  {
+    ...urlEncodeDecode,
+    keywords: ['URL', 'Encode', 'Decode'],
+  },
+  {
+    ...unixTimeConvert,
+    keywords: ['Unix timestamp', 'Date', 'Convert'],
+  },
+  {
+    ...passwordGenerator,
+    keywords: ['密码', 'Password', 'Token', 'Random'],
+  },
+  {
+    ...md5Encrypt,
+    keywords: ['MD5', 'Encrypt', 'Crypt', '加密'],
+  },
 ];
 
 // index

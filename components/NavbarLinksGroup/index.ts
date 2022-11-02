@@ -1,1 +1,1 @@
-export { LinksGroup, NavbarLinksGroup } from './NavbarLinksGroup';
+export { LinksGroup } from './NavbarLinksGroup';

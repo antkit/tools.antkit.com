@@ -1,7 +1,6 @@
-import { Box, Container, Space, Stack } from '@mantine/core';
+import { Container, Space, Stack } from '@mantine/core';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import { Banner } from '../components/Banner';
 import { ToolsActionGrid } from '../components/ToolsActionGrid';
 import { categories } from '../utils/category-data';
 
@@ -11,10 +10,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Homepage - AK Tools</title>
       </Head>
-
-      {/* <Box sx={{margin: '-16px -16px 20px -16px'}}>
-        <Banner componentsCount={124} />
-      </Box> */}
 
       <Container size={'xl'}>
         <Stack spacing={'lg'}>
